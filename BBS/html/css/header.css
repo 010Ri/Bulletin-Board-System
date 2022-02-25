@@ -1,0 +1,16 @@
+/* header */
+header {
+    width: 100%;
+    padding: 1em 0;
+    margin-bottom: 2%;
+    background: #778899;
+}
+
+.logo {
+    display: inline-block;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}

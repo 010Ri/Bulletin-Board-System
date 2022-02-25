@@ -1,0 +1,187 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #eee;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    padding: .5%;
+    background: white;
+    flex: 1;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+textarea {
+    width: 80%;
+    line-height: 1.5em;
+    height: calc(1.5em * 4);
+    padding: 1%;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+
+.e-d-textarea {
+    height: calc(1.5em * 15);
+}
+
+.posts-list {
+    background: white;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.posted-contents {
+    text-align: left;
+    margin: 2%;
+}
+
+.info {
+    width: 100%;
+}
+
+.user-info {
+    width: 75%;
+    text-decoration: underline;
+    display: inline-block;
+    padding: 2% 3%;
+    white-space: pre-wrap;
+}
+
+.user-text {
+    white-space: pre-wrap;
+    padding: 3%;
+    background: #f1f8ff;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+.admin-info {
+    color: red;
+    width: 75%;
+    text-decoration: underline;
+    display: inline-block;
+    white-space: pre-wrap;
+    padding: 2% 3%;
+}
+
+.admin-text {
+    padding: 3%;
+    white-space: pre-wrap;
+    background: #fffde8;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    border: dashed 2px orange;
+}
+
+.green-button {
+    display: inline-block;
+    border: 2px solid #91C7A4;
+    color: #91C7A4;
+    background: white;
+    border-radius: 0.5em;
+    padding: 1%;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+.green-button:hover {
+    color: white;
+    background: #91C7A4;
+}
+
+.red-button {
+    display: inline-block;
+    border: 2px solid #EE827C;
+    color: #EE827C;
+    background: white;
+    border-radius: 0.5em;
+    padding: 1%;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+.red-button:hover {
+    color: white;
+    background: #EE827C;
+}
+
+.blue-button {
+    display: inline-block;
+    border: 2px solid #4B7CB6;
+    color: #4B7CB6;
+    background: white;
+    border-radius: 0.5em;
+    padding: 1%;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+.blue-button:hover {
+    color: white;
+    background: #4B7CB6;
+}
+
+.gray-button {
+    display: inline-block;
+    border: 2px solid #C8C2C6;
+    color: #C8C2C6;
+    background: white;
+    border-radius: 0.5em;
+    padding: 1%;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+.gray-button:hover {
+    color: white;
+    background: #C8C2C6;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        min-width: 767px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        width: 95%;
+    }
+
+    .user-info {
+        display: block;
+    }
+
+    .admin-info {
+        display: block;
+    }
+
+}

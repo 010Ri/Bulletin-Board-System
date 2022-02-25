@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  php:
+    build: ./php
+    volumes:
+      - ./html:/var/www/html
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+    ports:
+      - 8080:80
+
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=db
+      - MYSQL_USER=test
+      - MYSQL_PASSWORD=test
+      - TZ=Asia/Tokyo
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
+      - PMA_USER=test
+      - PMA_PASSWORD=test
+
+    links:
+      - mysql
+    ports:
+      - 4040:80
+    volumes:
+      - ./phpmyadmin/sessions:/sessions
